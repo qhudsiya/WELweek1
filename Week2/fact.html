@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial</title>
+    </head>
+    <body>
+        <h1>Factorial</h1>
+        <input type="text" value="num" id="num">
+        <input type="submit">
+        <input type="text" id="result">
+        <script>
+            var fact;
+            var f=1;
+            var n=document.getElementById("num");
+            fact = () => {
+                while(n!=0){
+                    f=f*n;
+                    n--;
+                }
+                return f;
+                 }
+            document.getElementById("result").innerHTML=fact();
+        </script>
+    </body>
+</html>
